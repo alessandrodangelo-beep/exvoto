@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <title>EXVOTO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/index-D3n8s9-4.css" />
+</head>
+<body>
+  <div id="root">
+    <div class="bg-background text-foreground min-h-screen overflow-x-hidden selection:bg-exvoto-crimson selection:text-white font-sans">
+      <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-700 ease-in-out px-6 md:px-12 py-6 flex justify-between items-center bg-transparent text-white">
+        <a data-testid="nav-logo" href="#" class="font-serif text-2xl tracking-[0.2em] uppercase">Exvoto</a>
+        <div class="flex gap-8 text-[11px] uppercase tracking-[0.15em] font-medium font-sans">
+          <a href="#collection" class="hover:opacity-60 transition-opacity" data-testid="nav-collection">Collection</a>
+          <a href="#napoli-rituals" class="hover:opacity-60 transition-opacity">Napoli</a><a href="#invitation" class="hover:opacity-60 transition-opacity" data-testid="nav-atelier">Atelier</a>
+        </div>
+      </nav>
+
+      <section class="relative h-screen w-full overflow-hidden flex flex-col justify-center items-center text-white text-center">
+        <div class="absolute inset-0 w-full h-full" style="transform: scale(1.08);">
+          <img alt="Sunlit Neapolitan palazzo interior" class="w-full h-full object-cover object-center" src="assets/hero.png" />
+          <div class="absolute inset-0 bg-black/20"></div>
+        </div>
+        <div class="relative z-10 flex flex-col items-center px-4" style="opacity: 1; transform: none;">
+          <span class="font-sans text-xs uppercase tracking-[0.3em] mb-6 block opacity-90">EXVOTO — Napoli — Est. MMXXIV</span>
+          <h1 class="font-serif leading-[0.9] mb-8" style="font-size: clamp(5rem, 12vw, 11rem);">EXVOTO</h1>
+          <p class="font-sans text-sm md:text-base tracking-wide max-w-xl opacity-90 font-light">Coffee as Naples knows it: light and shadow, sacred and profane, chaos refined into devotion.</p>
+        </div>
+        <div class="absolute bottom-12 left-1/2 -translate-x-1/2 h-16 w-[1px] bg-white/20 overflow-hidden" style="opacity: 1;">
+          <div class="w-full h-full bg-white" style="transform: translateY(-6.2%);"></div>
+        </div>
+      </section>
+<section class="py-32 md:py-48 px-6 text-center max-w-5xl mx-auto">
+        <h2 class="font-serif text-[clamp(2.5rem,5vw,3.75rem)] leading-[1.1] text-[#33312E] mb-24" style="opacity: 1; transform: none;">“We believe coffee is not merely a morning ritual, but a sensual artifact. Born in the sunlit courtyards of Naples, EXVOTO is an offering to those who demand beauty in their daily existence — refined, unhurried, and exceptionally crafted.”</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-left md:text-center max-w-3xl mx-auto border-t border-border/60 pt-16" style="opacity: 1; transform: none;">
+          <div><div class="text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-3">Founded</div><div class="font-serif text-xl text-foreground">MMXXIV Napoli</div></div>
+          <div><div class="text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-3">Philosophy</div><div class="font-serif text-xl text-foreground">Sensual Artifact</div></div>
+          <div><div class="text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-3">Character</div><div class="font-serif text-xl text-foreground">Unhurried Craft</div></div>
+        </div>
+      </section>
+
+      <section id="collection" class="py-24 px-6 md:px-12 max-w-[1400px] mx-auto">
+        <div class="flex justify-between items-end mb-16 border-b border-border/60 pb-6" style="opacity: 1; transform: none;">
+          <h2 class="font-serif text-4xl md:text-5xl">The Collection</h2>
+          <span class="font-sans text-xs tracking-widest text-muted-foreground">2024</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-16">
+          <div class="group cursor-pointer" style="opacity: 1; transform: none;">
+            <div class="overflow-hidden mb-6 aspect-[3/4]"><img alt="Il Mattino Espresso" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-[1.04]" src="assets/coffee-il-mattino.png" /></div>
+            <div class="text-[10px] uppercase tracking-[0.2em] text-exvoto-crimson mb-3 font-semibold">Flagship Espresso</div>
+            <h3 class="font-serif text-3xl mb-3">Il Mattino</h3>
+            <p class="font-sans text-sm text-muted-foreground leading-relaxed">Our definitive expression. Notes of wild honey, toasted almond, and deep cacao.</p>
+          </div>
+          <div class="group cursor-pointer" style="opacity: 1; transform: none;">
+            <div class="overflow-hidden mb-6 aspect-[3/4]"><img alt="Luce Single Origin" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-[1.04]" src="assets/coffee-luce.png" /></div>
+            <div class="text-[10px] uppercase tracking-[0.2em] text-exvoto-crimson mb-3 font-semibold">Single Origin</div>
+            <h3 class="font-serif text-3xl mb-3">Luce</h3>
+            <p class="font-sans text-sm text-muted-foreground leading-relaxed">High-altitude volcanic soil. Bright, floral, fiercely independent. Notes of jasmine and bergamot.</p>
+          </div>
+          <div class="group cursor-pointer" style="opacity: 1; transform: none;">
+            <div class="overflow-hidden mb-6 aspect-[3/4]"><img alt="Vesuvio Ceremonial Blend" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-[1.04]" src="assets/coffee-vesuvio.png" /></div>
+            <div class="text-[10px] uppercase tracking-[0.2em] text-exvoto-crimson mb-3 font-semibold">Ceremonial Blend</div>
+            <h3 class="font-serif text-3xl mb-3">Vesuvio</h3>
+            <p class="font-sans text-sm text-muted-foreground leading-relaxed">A resonant profile for quiet moments. Smoked fig, dark cherry, aged leather.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-1 md:grid-cols-2 min-h-[90vh] bg-[#2A2826] text-[#F5F2EC]">
+        <div class="order-2 md:order-1 flex flex-col justify-center px-8 md:px-24 py-24">
+          <div class="max-w-md">
+            <span class="text-[10px] uppercase tracking-[0.2em] text-exvoto-crimson font-bold mb-10 block">Inheritance</span>
+            <p class="font-serif text-3xl md:text-4xl lg:text-[2.75rem] leading-[1.18] mb-12">Before luxury, there is gesture. Before taste, there is memory. The hand, the vessel, the offering: a grammar older than branding.</p>
+            <div class="grid grid-cols-2 gap-8 border-t border-white/15 pt-10">
+              <div>
+                <div class="text-[10px] uppercase tracking-[0.2em] opacity-60 mb-3">Material</div>
+                <div class="font-serif text-xl">Clay, fire, skin</div>
+              </div>
+              <div>
+                <div class="text-[10px] uppercase tracking-[0.2em] opacity-60 mb-3">Gesture</div>
+                <div class="font-serif text-xl">Carried devotion</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 md:order-2 h-[70vh] md:h-auto">
+          <img alt="Black and white portrait with vessel" class="w-full h-full object-cover" src="assets/vessel-portrait.png" />
+        </div>
+      </section>
+
+      <section id="napoli-rituals" class="py-24 md:py-36 px-6 md:px-12 bg-[#FAF9F6]">
+        <div class="max-w-5xl mx-auto text-center">
+          <div class="mx-auto">
+            <span class="text-[10px] uppercase tracking-[0.2em] text-exvoto-crimson font-bold mb-8 block">The City Below</span>
+            <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-[#33312E] mb-8">Where ritual becomes appetite.</h2>
+            <p class="font-sans text-[15px] text-muted-foreground leading-relaxed max-w-2xl mx-auto">Naples does not separate beauty from hunger, devotion from pleasure, or elegance from excess. EXVOTO begins there: in water, heat, voices, salt, and light.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full mt-24">
+        <div class="w-full h-[60vh] md:h-[75vh]" style="opacity: 1; transform: none;">
+          <img alt="Neapolitan waterfront restaurant at dusk" class="w-full h-full object-cover" src="assets/napoli-dinner-pier.png" />
+        </div>
+      </section>
+
+<section id="invitation" class="py-32 md:py-48 px-6 text-center max-w-2xl mx-auto">
+        <div style="opacity: 1; transform: none;">
+          <span class="text-[10px] uppercase tracking-[0.2em] text-exvoto-crimson font-bold mb-8 block">Enter the Atelier</span>
+          <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.1] mb-8">An offering <br />for the devoted.</h2>
+          <p class="font-sans text-[15px] text-muted-foreground leading-relaxed mb-12 max-w-md mx-auto">Join our private registry to receive limited allocations, ceremonial equipment, and dispatches from Naples.</p>
+          <form class="flex w-full max-w-md mx-auto border border-border/80 focus-within:border-foreground/40 transition-colors group">
+            <input placeholder="Your email address" class="flex-1 bg-transparent px-6 py-4 outline-none font-sans text-sm placeholder:text-muted-foreground" required data-testid="input-email" type="email" />
+            <button type="submit" class="px-8 font-sans text-[11px] uppercase tracking-[0.15em] font-medium hover:text-exvoto-crimson transition-colors" data-testid="btn-submit">Join</button>
+          </form>
+        </div>
+      </section>
+
+      <footer class="border-t border-border/60 py-12 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6 text-sm">
+        <div class="font-serif text-2xl tracking-[0.2em] uppercase">EXVOTO</div>
+        <div class="flex gap-8 text-[11px] uppercase tracking-[0.15em] text-muted-foreground font-sans">
+          <a href="#" class="hover:text-foreground transition-colors">Instagram</a>
+          <a href="#" class="hover:text-foreground transition-colors">Contact</a>
+          <a href="#" class="hover:text-foreground transition-colors">Privacy</a>
+        </div>
+        <div class="text-[10px] uppercase tracking-widest text-muted-foreground">© 2024</div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
