@@ -204,8 +204,8 @@
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(ellipse 80% 60% at 60% 40%, rgba(139,90,43,0.24) 0%, transparent 60%),
-        radial-gradient(ellipse 50% 80% at 30% 70%, rgba(80,40,10,0.18) 0%, transparent 50%);
+        radial-gradient(ellipse 55% 55% at 20% 85%, rgba(255,240,200,0.13) 0%, transparent 60%),
+        radial-gradient(ellipse 80% 60% at 60% 40%, rgba(139,90,43,0.18) 0%, transparent 60%);
     }
     .hero-bg::after {
       content: '';
@@ -213,15 +213,15 @@
       inset: 0;
       background:
         linear-gradient(90deg,
-          rgba(0,0,0,0.08) 0%,
-          rgba(0,0,0,0.08) 24%,
-          rgba(0,0,0,0.22) 43%,
-          rgba(0,0,0,0.30) 100%
+          rgba(0,0,0,0.04) 0%,
+          rgba(0,0,0,0.04) 20%,
+          rgba(0,0,0,0.28) 50%,
+          rgba(0,0,0,0.38) 100%
         ),
         linear-gradient(180deg,
-          rgba(0,0,0,0.20) 0%,
-          rgba(0,0,0,0.18) 46%,
-          rgba(0,0,0,0.12) 100%
+          rgba(0,0,0,0.22) 0%,
+          rgba(0,0,0,0.10) 55%,
+          rgba(0,0,0,0.32) 100%
         );
     }
     .hero-bg img {
@@ -231,6 +231,7 @@
       object-fit: cover;
       object-position: center bottom;
       z-index: 1;
+      filter: brightness(1.08) contrast(1.06) saturate(1.1);
     }
     .hero-bg::before { z-index: 2; }
     .hero-bg::after { z-index: 3; }
@@ -554,9 +555,9 @@
     .quick-add-btn:hover { background: #a02020; }
 
     /* placeholder colours */
-    .placeholder-mattino { background: linear-gradient(135deg, #c4a882 0%, #8a6340 30%, #4a3020 70%, #2a1a10 100%); }
-    .placeholder-luce { background: linear-gradient(135deg, #e8dcc8 0%, #c8b090 30%, #8a6838 60%, #4a3018 100%); }
-    .placeholder-vesuvio { background: linear-gradient(135deg, #3a2a1a 0%, #1a1008 40%, #4a2010 60%, #1a0a05 100%); }
+    .placeholder-mattino { background: var(--bg); }
+    .placeholder-luce { background: var(--bg); }
+    .placeholder-vesuvio { background: var(--bg); }
     .placeholder-label {
       position: absolute;
       bottom: 2rem; left: 50%;
