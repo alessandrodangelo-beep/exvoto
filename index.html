@@ -200,14 +200,25 @@
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(ellipse 80% 60% at 60% 40%, rgba(139,90,43,0.35) 0%, transparent 60%),
-        radial-gradient(ellipse 50% 80% at 30% 70%, rgba(80,40,10,0.4) 0%, transparent 50%);
+        radial-gradient(ellipse 80% 60% at 60% 40%, rgba(139,90,43,0.24) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 80% at 30% 70%, rgba(80,40,10,0.18) 0%, transparent 50%);
     }
     .hero-bg::after {
       content: '';
       position: absolute;
       inset: 0;
-      background: rgba(0,0,0,0.28);
+      background:
+        linear-gradient(90deg,
+          rgba(0,0,0,0.08) 0%,
+          rgba(0,0,0,0.08) 24%,
+          rgba(0,0,0,0.22) 43%,
+          rgba(0,0,0,0.30) 100%
+        ),
+        linear-gradient(180deg,
+          rgba(0,0,0,0.20) 0%,
+          rgba(0,0,0,0.18) 46%,
+          rgba(0,0,0,0.12) 100%
+        );
     }
     .hero-bg img {
       position: absolute;
@@ -296,15 +307,16 @@
     .btn-hero-ghost:hover { border-color: rgba(255,255,255,0.7); }
     .scroll-indicator {
       position: absolute;
-      bottom: 3rem;
+      top: calc(50% + 13.5rem - 40px);
       left: 50%;
       transform: translateX(-50%);
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 0.75rem;
+      gap: 0.5rem;
       opacity: 0.6;
-      animation: fadeIn 1.5s ease 1.2s both;
+      animation: none;
+      visibility: visible;
     }
     .scroll-indicator span {
       font-size: 0.55rem;
@@ -313,7 +325,7 @@
       color: white;
     }
     .scroll-line {
-      width: 1px; height: 60px;
+      width: 1px; height: 34px;
       background: rgba(255,255,255,0.2);
       overflow: hidden; position: relative;
     }
@@ -445,8 +457,9 @@
     }
     .product-img img {
       width: 100%; height: 100%;
-      object-fit: cover;
-      transition: transform 1.2s cubic-bezier(0.16,1,0.3,1);
+      object-fit: contain;
+      object-position: center;
+      transition: none;
       display: block;
       position: absolute;
       inset: 0;
@@ -460,7 +473,7 @@
       z-index: 0;
     }
     .product-card:hover .product-img img,
-    .product-card:hover .product-img-placeholder { transform: scale(1.05); }
+    .product-card:hover .product-img-placeholder { transform: none; }
     .product-img::after {
       content: '';
       position: absolute; inset: 0;
@@ -1304,7 +1317,8 @@
     }
     .cart-item-thumb {
       width: 100%; height: 100%;
-      object-fit: cover;
+      object-fit: contain;
+      object-position: center;
     }
     .cart-item-info { display: flex; flex-direction: column; gap: 0.3rem; }
     .cart-item-name { font-family: var(--serif); font-size: 1.1rem; }
@@ -2062,7 +2076,7 @@
   <div class="modal-overlay" id="modalOverlay" onclick="handleModalClick(event)">
     <div class="modal-panel" id="modalPanel">
       <div class="modal-img" id="modalImg">
-        <img id="modalProductImage" src="" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        <img id="modalProductImage" src="" alt="" loading="lazy" style="width:100%;height:100%;object-fit:contain;object-position:center;display:block;" />
         <div class="modal-img-placeholder" id="modalPlaceholder" style="display:none"></div>
       </div>
       <div class="modal-body">
