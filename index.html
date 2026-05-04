@@ -6,7 +6,7 @@
   <title>ESPRESSO NAPOLI — Shop</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Cinzel:wght@400;500;600&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -19,7 +19,8 @@
       --dark-text: #F5F2EC;
       --border: rgba(51,49,46,0.15);
       --serif: 'Cormorant Garamond', serif;
-      --sans: 'DM Sans', sans-serif;
+      --sans: 'Jost', sans-serif;
+      --display: 'Cinzel', serif;
     }
 
     html { scroll-behavior: smooth; }
@@ -94,7 +95,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1.5rem 3rem;
+      padding: 1.8rem 3rem;
       transition: background 0.6s ease, padding 0.5s ease, backdrop-filter 0.6s;
       color: white;
     }
@@ -110,19 +111,21 @@
     nav.scrolled .nav-links a:hover { opacity: 0.45; }
     nav.scrolled .nav-cart-btn { color: var(--fg); border-color: rgba(51,49,46,0.2); }
     .nav-logo {
-      font-family: var(--serif);
-      font-size: 1.5rem;
-      letter-spacing: 0.2em;
+      font-family: var(--display);
+      font-size: 1rem;
+      letter-spacing: 0.28em;
       text-transform: uppercase;
       text-decoration: none;
       color: inherit;
+      font-weight: 400;
     }
     .nav-links { display: flex; gap: 2rem; align-items: center; }
     .nav-links a {
-      font-size: 0.68rem;
+      font-family: var(--display);
+      font-size: 0.6rem;
       text-transform: uppercase;
-      letter-spacing: 0.15em;
-      font-weight: 500;
+      letter-spacing: 0.22em;
+      font-weight: 400;
       text-decoration: none;
       color: white;
       opacity: 0.85;
@@ -135,11 +138,11 @@
       border: 1px solid rgba(255,255,255,0.3);
       color: white;
       padding: 0.55rem 1.2rem 0.55rem 1rem;
-      font-family: var(--sans);
-      font-size: 0.62rem;
+      font-family: var(--display);
+      font-size: 0.55rem;
       text-transform: uppercase;
-      letter-spacing: 0.16em;
-      font-weight: 500;
+      letter-spacing: 0.22em;
+      font-weight: 400;
       cursor: none;
       display: flex;
       align-items: center;
@@ -167,9 +170,10 @@
       color: var(--dark-text);
       text-align: center;
       padding: 0.6rem 2rem;
-      font-size: 0.62rem;
+      font-family: var(--display);
+      font-size: 0.55rem;
       text-transform: uppercase;
-      letter-spacing: 0.18em;
+      letter-spacing: 0.25em;
       opacity: 0.85;
     }
 
@@ -239,20 +243,23 @@
       padding: 0 1.5rem;
     }
     .hero-eyebrow {
-      font-family: var(--sans);
-      font-size: 0.65rem;
+      font-family: var(--display);
+      font-size: 0.58rem;
       text-transform: uppercase;
-      letter-spacing: 0.3em;
+      letter-spacing: 0.38em;
       margin-bottom: 1.5rem;
-      opacity: 0.8;
+      opacity: 0.75;
+      font-weight: 400;
       animation: fadeUp 1.2s cubic-bezier(0.16,1,0.3,1) 0.2s both;
     }
     .hero-title {
       font-family: var(--serif);
       font-size: clamp(3rem, 8.5vw, 9rem);
-      line-height: 0.9;
-      letter-spacing: -0.01em;
-      margin-bottom: 1.5rem;
+      line-height: 0.88;
+      letter-spacing: -0.02em;
+      font-weight: 600;
+      font-style: normal;
+      margin-bottom: 1.8rem;
       text-shadow: 0 2px 40px rgba(0,0,0,0.25);
       animation: fadeUp 1.2s cubic-bezier(0.16,1,0.3,1) 0.4s both;
     }
@@ -277,11 +284,11 @@
       color: white;
       border: none;
       padding: 0.9rem 2.4rem;
-      font-family: var(--sans);
-      font-size: 0.66rem;
+      font-family: var(--display);
+      font-size: 0.58rem;
       text-transform: uppercase;
-      letter-spacing: 0.18em;
-      font-weight: 500;
+      letter-spacing: 0.22em;
+      font-weight: 400;
       cursor: none;
       text-decoration: none;
       transition: background 0.3s, transform 0.2s;
@@ -295,11 +302,11 @@
       color: white;
       border: 1px solid rgba(255,255,255,0.35);
       padding: 0.9rem 2.4rem;
-      font-family: var(--sans);
-      font-size: 0.66rem;
+      font-family: var(--display);
+      font-size: 0.58rem;
       text-transform: uppercase;
-      letter-spacing: 0.18em;
-      font-weight: 500;
+      letter-spacing: 0.22em;
+      font-weight: 400;
       cursor: none;
       text-decoration: none;
       transition: border-color 0.3s, color 0.3s;
@@ -351,11 +358,12 @@
     .manifesto blockquote {
       font-family: var(--serif);
       font-size: clamp(1.6rem, 3.5vw, 2.6rem);
-      line-height: 1.15;
+      line-height: 1.2;
       color: var(--fg);
       font-style: italic;
       font-weight: 300;
       margin-bottom: 4rem;
+      letter-spacing: 0.01em;
     }
     .manifesto-meta {
       display: grid;
@@ -367,7 +375,7 @@
       border-top: 1px solid var(--border);
       padding-top: 3rem;
     }
-    .meta-label { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--muted); margin-bottom: 0.6rem; }
+    .meta-label { font-family: var(--display); font-size: 0.55rem; text-transform: uppercase; letter-spacing: 0.25em; color: var(--muted); margin-bottom: 0.6rem; font-weight: 400; }
     .meta-value { font-family: var(--serif); font-size: 1.2rem; color: var(--fg); }
 
     /* ── TRUST BAND ── */
@@ -418,10 +426,12 @@
       gap: 0.4rem;
     }
     .collection-header span {
-      font-size: 0.65rem;
+      font-family: var(--display);
+      font-size: 0.55rem;
       text-transform: uppercase;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.25em;
       color: var(--muted);
+      font-weight: 400;
     }
     .collection-filter {
       display: flex;
@@ -430,14 +440,15 @@
     .filter-btn {
       background: none;
       border: 1px solid var(--border);
-      font-family: var(--sans);
-      font-size: 0.6rem;
+      font-family: var(--display);
+      font-size: 0.54rem;
       text-transform: uppercase;
-      letter-spacing: 0.14em;
+      letter-spacing: 0.18em;
       color: var(--muted);
       padding: 0.38rem 0.9rem;
       cursor: none;
       transition: all 0.25s;
+      font-weight: 400;
     }
     .filter-btn.active, .filter-btn:hover { border-color: var(--fg); color: var(--fg); }
 
@@ -1142,19 +1153,25 @@
     /* ── DIVIDER IMAGE ── */
     .divider-image {
       width: 100%;
-      height: clamp(40vh, 65vh, 75vh);
+      height: clamp(55vh, 80vh, 90vh);
       overflow: hidden; position: relative;
+    }
+    .divider-image img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center center;
     }
     .divider-placeholder {
       width: 100%; height: 100%;
-      background: linear-gradient(160deg, #1a0e05 0%, #3d2210 40%, #2a1508 70%, #110a04 100%);
+      background: linear-gradient(160deg, #0d0704 0%, #2a1508 40%, #1a0e05 70%, #080402 100%);
       position: relative;
     }
     .divider-placeholder::before {
       content: ''; position: absolute; inset: 0;
       background:
-        radial-gradient(ellipse 70% 50% at 70% 50%, rgba(200,120,30,0.25) 0%, transparent 60%),
-        radial-gradient(ellipse 40% 60% at 20% 60%, rgba(100,50,10,0.3) 0%, transparent 50%);
+        radial-gradient(ellipse 80% 40% at 50% 60%, rgba(200,120,30,0.2) 0%, transparent 60%),
+        radial-gradient(ellipse 30% 50% at 15% 70%, rgba(139,26,26,0.15) 0%, transparent 50%),
+        radial-gradient(ellipse 30% 50% at 85% 70%, rgba(139,26,26,0.15) 0%, transparent 50%);
     }
     .divider-overlay-text {
       position: absolute;
@@ -1197,7 +1214,8 @@
       max-width: 24rem; margin: 3rem auto 0;
     }
     .line-divider::before, .line-divider::after { content: ''; flex: 1; height: 1px; background: var(--border); }
-    .line-divider-icon { font-family: var(--serif); font-size: 1.1rem; color: var(--crimson); opacity: 0.6; }
+    .line-divider-icon { display: flex; align-items: center; justify-content: center; }
+    .line-divider-icon img { width: 211px; height: auto; display: block; filter: drop-shadow(0 2px 10px rgba(139,26,26,0.3)); }
 
     /* ── INVITATION ── */
     .invitation {
@@ -1561,11 +1579,6 @@
   <div id="cursor"></div>
   <div id="cursor-ring"></div>
 
-  <!-- ANNOUNCEMENT BAR -->
-  <div class="announcement">
-    Free shipping over £35 &nbsp;·&nbsp; First collection: beans, moka & capsules &nbsp;·&nbsp; Subscribe & save 15%
-  </div>
-
   <!-- NAV -->
   <nav id="navbar">
     <a class="nav-logo" href="#">ESPRESSO NAPOLI</a>
@@ -1585,7 +1598,7 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-bg" id="hero-bg">
-      <img src="assets/hero.png" alt="Sunlit Neapolitan palazzo interior" loading="lazy" width="1600" height="900" />
+      <img src="assets/hero.png" alt="Sunlit Neapolitan palazzo interior" loading="lazy" width="1600" height="900" style="color: transparent;" />
     </div>
     <div class="hero-content">
       <span class="hero-eyebrow">ESPRESSO NAPOLI — Est. MMXXIV</span>
@@ -1954,15 +1967,15 @@
     <h2 class="reveal reveal-delay-1">Where ordinary coffee becomes ritual.</h2>
     <p class="reveal reveal-delay-2">Naples does not separate coffee from life. ESPRESSO NAPOLI begins there: in kitchens, bars, voices, pressure, heat and the first quiet minutes of the morning.</p>
     <div class="line-divider reveal reveal-delay-3">
-      <span class="line-divider-icon">✦</span>
+      <span class="line-divider-icon"><img src="assets/cornicello.png" alt="Cornicello napoletano" /></span>
     </div>
   </section>
 
   <!-- DIVIDER IMAGE -->
   <section class="divider-image reveal">
-    <img src="assets/napoli-dinner-pier.png" alt="Neapolitan waterfront restaurant at dusk" loading="lazy" width="1600" height="900" />
+    <img src="assets/napoli-bar.png" alt="Bancone di un caffè napoletano" loading="lazy" width="2400" height="1200" style="color: transparent;" />
     <div class="divider-placeholder">
-      <div class="divider-overlay-text">Napoli, al tramonto</div>
+      <div class="divider-overlay-text">Il bancone. Napoli, ogni mattina.</div>
     </div>
   </section>
 
